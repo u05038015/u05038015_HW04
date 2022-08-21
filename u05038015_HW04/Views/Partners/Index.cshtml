@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Become a Partner?</h2>
+
+<head>
+    <style>
+        body {
+            background-image: url("https://images.squarespace-cdn.com/content/v1/54e4862de4b0004c775a3d5a/1532942008938-NS1HGUK6FO676YARX0X7/jeremy-bishop-136677-unsplash+%281%29.jpg?format=1000w");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            font-family: 'Bookman Old Style';
+            color: white;
+        }
+    </style>
+</head>
+
+<html>
+<body>
+    <form>
+        <!--Company Name-->
+        <div class="form-group">
+            <label for="formCompany">Company Name:</label>
+            <input type="text" class="form-control" id="formCompany" placeholder="Company Name">
+        </div>
+        <!--Employee Name-->
+        <div class="form-group">
+            <label for="formName">Name:</label>
+            <input type="text" class="form-control" id="formName" placeholder="Name">
+        </div>
+        <!--Employee Surname-->
+        <div class="form-group">
+            <label for="formSurname">Surname:</label>
+            <input type="text" class="form-control" id="formSurname" placeholder="Surname">
+        </div>
+        <!--Email-->
+        <div class="form-group">
+            <label for="formCompanyEmail">Email address:</label>
+            <input type="email" class="form-control" id="formCompanyEmail" placeholder="name@example.com">
+        </div>
+        <!--Adress-->
+        <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <br />
+        <!--Help-->
+        <p><b>Help:</b></p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="Volunteer" id="Volunteer" value="Volunteer" checked>
+            <label class="form-check-label" for="Volunteer">
+                Volunteer
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="Donate" id="Donate" value="Donate">
+            <label class="form-check-label" for="Donate">
+                Donate
+            </label>
+        </div>
+        <br />
+        <!--NPO-->
+        <p><b>Non-profit organisation:</b></p>
+        <div class="form-check">
+            <input type="checkbox" id="npo1" name="npo1" value="npo1">
+            <label for="npo1">Sustainable Seas Trust</label><br>
+            <input type="checkbox" id="npo2" name="npo2" value="npo2">
+            <label for="npo2">Sea the bigger picture</label><br>
+            <input type="checkbox" id="npo3" name="npo3" value="npo3">
+            <label for="npo3">Cleanup C</label><br><br>
+        </div>
+        <!--Button-->
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
